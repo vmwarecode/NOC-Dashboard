@@ -1,0 +1,871 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1539356295492,
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "0a881e38-7e3a-4c58-9314-2ac77222af9d",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "NOC",
+      "rank": 99,
+      "shared": false,
+      "temporary": false,
+      "userId": "c5fc5664-8a26-4eec-a10e-22582ca421ba",
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 6,
+               "boxHeight": null,
+               "labelSize": 12,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel4927-1",
+                        "isStringMetric": false,
+                        "label": "Total Hosts",
+                        "link": "",
+                        "metricKey": "summary|total_number_hosts",
+                        "metricName": "Summary|Total Number of Hosts",
+                        "metricUnitId": null,
+                        "orangeBound": 5,
+                        "redBound": 3,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": "",
+                        "yellowBound": 7
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel4927-2",
+                        "isStringMetric": false,
+                        "label": "Running Hosts",
+                        "link": "",
+                        "metricKey": "summary|number_running_hosts",
+                        "metricName": "Summary|Number of Running Hosts",
+                        "metricUnitId": null,
+                        "orangeBound": 5,
+                        "redBound": 3,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": "",
+                        "yellowBound": 7
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel4927-3",
+                        "isStringMetric": false,
+                        "label": "Total VMs",
+                        "link": "",
+                        "metricKey": "summary|total_number_vms",
+                        "metricName": "Summary|Total Number of VMs",
+                        "metricUnitId": null,
+                        "orangeBound": 20,
+                        "redBound": 10,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": "",
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel4927-5",
+                        "isStringMetric": false,
+                        "label": "Running VMs",
+                        "link": "",
+                        "metricKey": "summary|number_running_vms",
+                        "metricName": "Summary|Number of Running VMs",
+                        "metricUnitId": null,
+                        "orangeBound": 20,
+                        "redBound": 10,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": "",
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel4927-6",
+                        "isStringMetric": false,
+                        "label": "Powered Off VMs",
+                        "link": "",
+                        "metricKey": "summary|number_poweredOff_vms",
+                        "metricName": "Summary|Number of Powered Off VMs",
+                        "metricUnitId": null,
+                        "orangeBound": 2,
+                        "redBound": 3,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": "",
+                        "yellowBound": 1
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel4927-7",
+                        "isStringMetric": false,
+                        "label": "Unhappy VMs",
+                        "link": "",
+                        "metricKey": "summary|drs_unhappy_vms",
+                        "metricName": "Summary|DRS Unhappy VMs",
+                        "metricUnitId": null,
+                        "orangeBound": 2,
+                        "redBound": 3,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": "",
+                        "yellowBound": 1
+                     }
+                  ],
+                  "resourceMetrics": []
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "periodLength": "last12Hour",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "relationshipMode": 0,
+               "resInteractionMode": null,
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": false},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Overall Status",
+               "valueSize": 24,
+               "visualTheme": 6
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 9,
+               "x": 1,
+               "y": 1
+            },
+            "height": 154,
+            "id": "c2d1a494-ed4a-412a-9cd7-d424ee9f8ea4",
+            "title": "Overall Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#00ff00",
+                           "#888800",
+                           "#ff0000"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "mem|usage_average",
+                     "value": "Memory|Usage (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "hosts-health",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:3_::_",
+                  "sizeBy": {
+                     "metricKey": "cpu|capacity_usagepct_average",
+                     "value": "CPU|Capacity Usage (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "Hosts CPU & MEM Utilization",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 2,
+               "x": 3,
+               "y": 10
+            },
+            "height": 438,
+            "id": "0f1b7817-62de-4538-9a5e-27f8f38ba554",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_0f1b7817-62de-4538-9a5e-27f8f38ba554",
+               "value": "o%3A"
+            }],
+            "title": "Hosts CPU & MEM Utilization",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#00ff00",
+                           "#888800",
+                           "#ff0000"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "capacity|usedSpacePct",
+                     "value": "Capacity|Used Space (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "datastore-consumption",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:4_::_",
+                  "sizeBy": {
+                     "metricKey": "capacity|provisioned",
+                     "value": "Capacity|Provisioned (GB)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "title": "Datastore Utilization",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 2,
+               "x": 5,
+               "y": 10
+            },
+            "height": 438,
+            "id": "58992887-9595-47d4-adce-30184d38e721",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_58992887-9595-47d4-adce-30184d38e721",
+               "value": "o%3A"
+            }],
+            "title": "Datastore Utilization",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#00ff00",
+                           "#888800",
+                           "#ff0000"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "mem|usage_average",
+                     "value": "Memory|Usage (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "cluster-utilzation",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:2_::_",
+                  "sizeBy": {
+                     "metricKey": "cpu|capacity_usagepct_average",
+                     "value": "CPU|Capacity Usage (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "Cluster CPU & Mem Utilization",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 2,
+               "x": 1,
+               "y": 10
+            },
+            "height": 438,
+            "id": "16b245d1-7024-48fa-91b1-e348e3f90bcc",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_16b245d1-7024-48fa-91b1-e348e3f90bcc",
+               "value": "o%3A"
+            }],
+            "title": "Cluster CPU & Mem Utilization",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#00ff00",
+                           "#888800",
+                           "#ff0000"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "mem|usage_average",
+                     "value": "Memory|Usage (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "id": "extModel2718-1",
+                  "mode": {"mode": false},
+                  "name": "vm-utilization",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:5_::_",
+                  "sizeBy": {
+                     "metricKey": "cpu|usage_average",
+                     "value": "CPU|Usage (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "VM CPU & Mem Utilization",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 3,
+               "x": 7,
+               "y": 10
+            },
+            "height": 438,
+            "id": "2f236c25-b777-4a97-b636-988113956d12",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_2f236c25-b777-4a97-b636-988113956d12",
+               "value": "o%3A"
+            }],
+            "title": "VM CPU & Mem Utilization",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "badge|health",
+                     "value": "Badge|Health (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "vm-health",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:5_::_",
+                  "sizeBy": {
+                     "metricKey": "badge|risk",
+                     "value": "Badge|Risk (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "VM's Risk & Health",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 3,
+               "x": 7,
+               "y": 4
+            },
+            "height": 324,
+            "id": "1fb179d7-db35-46d1-a61a-9fc6b0960f6b",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_1fb179d7-db35-46d1-a61a-9fc6b0960f6b",
+               "value": "o%3A"
+            }],
+            "title": "VM's Risk & Health",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "badge|health",
+                     "value": "Badge|Health (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "cluster-health",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:2_::_",
+                  "sizeBy": {
+                     "metricKey": "badge|risk",
+                     "value": "Badge|Risk (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": null
+               }],
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "Cluster Risk & Health",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 1,
+               "y": 4
+            },
+            "height": 324,
+            "id": "f2f068e9-4fd1-4269-92ad-6f9616bb6cc2",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_f2f068e9-4fd1-4269-92ad-6f9616bb6cc2",
+               "value": "o%3A"
+            }],
+            "title": "Cluster Risk & Health",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#808000",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "badge|health",
+                     "value": "Badge|Health (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "host-health",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:3_::_",
+                  "sizeBy": {
+                     "metricKey": "badge|risk",
+                     "value": "Badge|Risk (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "Hosts Risk & Health",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 3,
+               "y": 4
+            },
+            "height": 324,
+            "id": "f3fb56ab-4f3b-4418-89c9-f8bcbe132419",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_f3fb56ab-4f3b-4418-89c9-f8bcbe132419",
+               "value": "o%3A"
+            }],
+            "title": "Hosts Risk & Health",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 100,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "badge|health",
+                     "value": "Badge|Health (%)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002006VMWAREVMwareAdapter Instance",
+                     "originalText": "vCenter Server",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "vCenter Server",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "id": "extModel20468-1",
+                  "mode": {"mode": false},
+                  "name": "datastore-health",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:4_::_",
+                  "sizeBy": {
+                     "metricKey": "badge|risk",
+                     "value": "Badge|Risk (%)"
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": {
+                     "id": "004null002006VMWAREClusterComputeResource",
+                     "originalText": "Cluster Compute Resource",
+                     "parentId": "VMWARE",
+                     "parentText": "vCenter Adapter",
+                     "text": "Cluster Compute Resource",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:2_::_"
+                  }
+               }],
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "title": "Datastore Risk & Health",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 5,
+               "y": 4
+            },
+            "height": 324,
+            "id": "a4cf1372-de2b-4df3-9a95-491a77510ebe",
+            "states": [{
+               "key": "perm_HeatMap_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_a4cf1372-de2b-4df3-9a95-491a77510ebe",
+               "value": "o%3A"
+            }],
+            "title": "Datastore Risk & Health",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "alertAction": [],
+               "alertImpact": [],
+               "criticalityLevel": [
+                  3,
+                  4
+               ],
+               "mode": "resource",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "state": [],
+               "status": [0],
+               "tagFilter": null,
+               "title": "Alert List",
+               "type": []
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 3,
+               "x": 10,
+               "y": 1
+            },
+            "height": 210,
+            "id": "841c3ab3-ed7d-419f-a66b-567ce41d6d1b",
+            "states": [
+               {
+                  "key": "permDateFilter_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_841c3ab3-ed7d-419f-a66b-567ce41d6d1b",
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+               },
+               {
+                  "key": "permViewMode_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_841c3ab3-ed7d-419f-a66b-567ce41d6d1b",
+                  "value": "s%3Atime"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_841c3ab3-ed7d-419f-a66b-567ce41d6d1b",
+                  "value": "b%3A1"
+               },
+               {
+                  "key": "permAlertGrid_perm_widget_0a881e38-7e3a-4c58-9314-2ac77222af9d_841c3ab3-ed7d-419f-a66b-567ce41d6d1b",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ewidth%25253Dn%2525253A115%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AstartTimeUtc%2525255Edirection%2525253Ds%252525253AASC"
+               }
+            ],
+            "title": "Alert List",
+            "type": "AlertList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "impactedBadge": "",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "resource": {
+                  "resourceId": "resource:id:0_::_",
+                  "resourceName": "vSphere World"
+               },
+               "selfProvider": {"selfProvider": true},
+               "title": "Top Alerts",
+               "topIssuesDisplayLimit": 10,
+               "triggeredObject": {"triggeredObject": "selfChildren"}
+            },
+            "gridsterCoords": {
+               "h": 13,
+               "w": 3,
+               "x": 10,
+               "y": 5
+            },
+            "height": 723,
+            "id": "c5974414-f24d-46c8-bffd-b7d6770e2a3a",
+            "title": "Top Alerts",
+            "type": "ProblemAlertsList"
+         }
+      ]
+   }],
+   "entries": {
+      "resource": [{
+         "adapterKindKey": "VMWARE",
+         "identifiers": [],
+         "internalId": "resource:id:0_::_",
+         "name": "vSphere World",
+         "resourceKindKey": "vSphere World"
+      }],
+      "resourceKind": [
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:3_::_",
+            "resourceKindKey": "HostSystem"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:1_::_",
+            "resourceKindKey": "VMwareAdapter Instance"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:5_::_",
+            "resourceKindKey": "VirtualMachine"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:2_::_",
+            "resourceKindKey": "ClusterComputeResource"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:0_::_",
+            "resourceKindKey": "vSphere World"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:4_::_",
+            "resourceKindKey": "Datastore"
+         }
+      ]
+   },
+   "uuid": "84e18633-e023-41d7-9430-4255d1776b55"
+}
